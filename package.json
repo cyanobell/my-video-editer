@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "studio": "remotion studio",
+	"render": "remotion render Preview out/out.mp4",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

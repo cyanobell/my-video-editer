@@ -43,7 +43,7 @@ export const ImageVideoRenderer:React.FC<ImageVideoRendererProps> = (
 ) => {
   return (
     <AbsoluteFill>
-      <Typography variant="h1">
+      <Typography variant="h1" sx={{color: "green"}}>
         {title}
       </Typography>
       {imageSeqs?.map((imageSeq, index) => {
