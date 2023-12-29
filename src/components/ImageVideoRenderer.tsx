@@ -1,7 +1,7 @@
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import { Sequence } from "remotion";
 import React from "react"
-import { Box } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import { ImageSeq } from "@/models/ImageSequence"
 import Image from "next/image";
 
@@ -43,6 +43,9 @@ export const ImageVideoRenderer:React.FC<ImageVideoRendererProps> = (
 ) => {
   return (
     <AbsoluteFill>
+      <Typography variant="h1">
+        {title}
+      </Typography>
       {imageSeqs?.map((imageSeq, index) => {
         return <ImageSeqMove imageSeq={imageSeq} key={index}/>
       })}

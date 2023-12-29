@@ -11,13 +11,13 @@ const myVideoPropsSchema = z.object({
 
 export const RemotionRoot: React.FC = () => {
   // DurationInFrames の状態を管理
-  const [durationInFrames, setDurationInFrames] = useState(250); // 初期値は任意
+
 	return (
 		<>
 			<Composition
 				id="Preview"
 				component={ImageVideoRenderer}
-				durationInFrames={durationInFrames}
+				durationInFrames={250}
 				fps={30}
 				width={960}
 				height={540}
